@@ -30,11 +30,12 @@ function ListPages() {
   };
 
   return (
-    <div className="table-list px-2">
-      <table className="table table-bordered px-2">
+    <div className="table-list px-4">
+      
+      <table className="table">
 
         <thead>
-          <tr className="table-row">
+          <tr className="table-row ">
             <th scope="col">Id</th>
             <th scope="col">Name</th>
             <th scope="col">Email</th>
@@ -43,10 +44,14 @@ function ListPages() {
           </tr>
         </thead>
 
-        <tbody>
+        <tbody className="tbody">
           {data.map((user, index) => (
             <tr key={index}>
+
+              {/* s.no for users */}
               <td>{index + 1}</td>
+
+              {/* data of user name */}
               <td>
                 {editingUserId === user.id ? (
                   <input
@@ -58,6 +63,8 @@ function ListPages() {
                   user.name
                 )}
               </td>
+
+              {/* data of user email */}
               <td>
                 {editingUserId === user.id ? (
                   <input
@@ -69,6 +76,10 @@ function ListPages() {
                   user.email
                 )}
               </td>
+
+              
+              {/* data of user phone number */}
+
               <td>
                 {editingUserId === user.id ? (
                   <input
@@ -80,6 +91,12 @@ function ListPages() {
                   user.phone
                 )}
               </td>
+
+            
+              
+              {/* Buttons for the function to edit,delete and update. */}
+
+              {/* button to update the user */}
               <td>
                 {editingUserId === user.id ? (
                   <button
@@ -91,19 +108,22 @@ function ListPages() {
                   </button>
                 ) : (
                   <>
+                  {/* button to Edit the user */}
                     <button
                       type="button"
                       className="btn btn-primary mt-2 me-4"
                       onClick={() => handleEditClick(user)}
                     >
-                      Edit
+                    <i>Edit</i>
                     </button>
+
+                    {/* button to delete the user */}
                     <button
                       type="button"
                       className="btn btn-danger mt-2 me-4"
                       onClick={() => handleDelete(user.id)}
                     >
-                      Delete
+                     <i>Delete</i>
                     </button>
                   </>
                 )}

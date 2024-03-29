@@ -44,7 +44,7 @@ export function UserContextProvider({ children }) {
         console.log(response);
         AddtoTable(response.data);
         navigate("/ListPages");
-        alert("User added successfully");
+        alert(" User added successfully ✅");
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -56,6 +56,7 @@ export function UserContextProvider({ children }) {
   };
 
   // Update the list of user information
+
   const handleUpdate = (id, updatedData) => {
     axios
       .put(`${API}/${id}`, updatedData)
@@ -74,15 +75,19 @@ export function UserContextProvider({ children }) {
 
 
   // Delete the list of user information
+
   const handleDelete = (id) => {
     axios
       .delete(`${API}/${id}`)
       .then(() => {
         setData((prevData) => prevData.filter((user) => user.id !== id));
         alert("Are you sure you want delete?");
+        alert("Deleted Successfully❌");
       })
+      
       .catch((error) => {
         console.log("Error:", error);
+        
       });
   };
 
@@ -115,5 +120,7 @@ export function UserContextProvider({ children }) {
     handleDelete,
   };
 
-  return <UserContext.Provider value={value}>{children}</UserContext.Provider>;
+  return <UserContext.Provider value={value}>
+    {children}
+    </UserContext.Provider>;
 }

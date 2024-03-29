@@ -5,7 +5,7 @@ import Footer from "./Components/Footer";
 import Home from "./Components/Home";
 import { UserContextProvider } from "./Components/Context/usercontext";
 import ListPages from "./Components/ListPage";
-import "../src/App.css";
+
 
 function App(){
   return (

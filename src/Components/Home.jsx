@@ -8,28 +8,18 @@ function Home() {
   const formId = 11;
   return (
     <div className="container my-5">
-      <div className="row align-items-center">
+      <div className="row ">
 
-      {/* to set icon on home page */}
-      <div className="col-lg-7 text-center text-lg-start">
-          <img
-            src="https://cdn-icons-gif.flaticon.com/8121/8121277.gif"
-            className="img-fluid"
-            alt="Contact Us Illustration"
-          />
-
-        </div>  
-        
-
+      
         {/* To set a form that gets users details */}
-        <div className="col-md-10 mx-auto col-lg-5">
-            <h2 className="display-4 fw-bold lh-1 text-white mb-4">
-              <span className="text-primary" >Enter Your</span> <span className="text-success">Data</span>
+        <div className="col-md-10 mx-auto col-lg-4 p-20">
+            <h2 className="display-4 fw-bold lh-1">
+              <span className="text-primary">Enter Your</span> <span className="text-success">Data</span>
             </h2>
 
 
           <form
-            className=" p-5 p-md-5 border rounded bg-white"
+            className=" p-4 p-md-5"
             onSubmit={(e) => handleFormSubmit(e, { name, email, phone }, formId)}
           >
             {/* to enter name */}
@@ -77,9 +67,24 @@ function Home() {
           </form>
         </div>
 
+
+
+
+        <div className="col-lg-7 text-center text-lg-start">
+          
+          <img
+            
+            src="https://geekflare.com/cdn-cgi/image/width=900,quality=90,gravity=auto,sharpen=1,metadata=none,format=auto,onerror=redirect/wp-content/uploads/2022/11/Why-you-Need-BYOE.png"
+            className="img-fluid"
+            // alt="Contact Us Illustration"
+          />
+
+          
+        </div>
+
            
       </div>
-    </div>
+    // </div>
   );
 }
 

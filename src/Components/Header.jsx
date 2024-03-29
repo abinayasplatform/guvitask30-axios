@@ -9,7 +9,7 @@ function Header() {
 
 
         <NavLink className="navbar-brand" to="/">
-          <h1>DASHBOARD FOR CRUD</h1>
+          <h2>DASHBOARD FOR CRUD</h2>
           
         </NavLink>
         
@@ -32,7 +32,7 @@ function Header() {
           <ul className="navbar-nav ml-auto">
 
           {/* link for Home */}
-          <h3><li className="nav-item">
+          <h5><li className="nav-item">
               <NavLink
                 to="/"
                 className="nav-link"
@@ -41,11 +41,11 @@ function Header() {
                 Home
               </NavLink>
             </li>
-            </h3>
+            </h5>
 
 
             {/* Link for Users Data */}
-            <h3><li className="nav-item">
+            <h5><li className="nav-item">
                 
                 <NavLink
                             
@@ -55,7 +55,7 @@ function Header() {
               >
                  Users Data
               </NavLink>
-            </li></h3>
+            </li></h5>
 
           </ul>
         </div>
