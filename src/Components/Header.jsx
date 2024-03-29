@@ -14,6 +14,7 @@ function Header() {
         </NavLink>
         
         {/* Nav bar  */}
+
         <button
           className="navbar-toggler"
           type="button"
@@ -45,7 +46,8 @@ function Header() {
 
             {/* Link for Users Data */}
             <h3><li className="nav-item">
-                          <NavLink
+                
+                <NavLink
                             
                 to="/ListPages"
                 className="nav-link"
