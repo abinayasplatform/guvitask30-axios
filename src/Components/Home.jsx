@@ -15,7 +15,7 @@ function Home() {
           
           <img
             
-            src="https://cdn-icons-gif.flaticon.com/12756/12756598.gif"
+            // src="https://cdn-icons-gif.flaticon.com/12756/12756598.gif"
             className="img-fluid"
             alt="Contact Us Illustration"
           />

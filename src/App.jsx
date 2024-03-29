@@ -4,7 +4,8 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Home from "./Components/Home";
 import { UserContextProvider } from "./Components/Context/usercontext";
-
+import ListPages from "./Components/ListPage";
+import "../src/App.css";
 
 function App(){
   return (
@@ -13,12 +14,12 @@ function App(){
 <UserContextProvider>
         <Routes>
           <Route path="/" element={<Home />} />
-         
+          <Route path="/ListPages" element={<ListPages />} />
         </Routes>
-      </UserContextProvider>
+</UserContextProvider>
 <Footer/>
     </div>
   )
 }
 
-export default App
+export default App;
