@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useUserContext } from "./Context/usercontext";
 import axios from "axios";
+import "../Components/ListPage.css";
 
 function ListPages() {
   const { data, handleDelete, handleUpdate } = useUserContext();

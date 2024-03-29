@@ -13,7 +13,8 @@ function Header() {
           
         </NavLink>
         
-        {/* <button
+        {/* Nav bar  */}
+        <button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -21,9 +22,9 @@ function Header() {
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
-        > */}
-          {/* <span className="navbar-toggler-icon"></span>
-        </button> */}
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
 
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
