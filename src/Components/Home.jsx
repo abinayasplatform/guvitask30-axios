@@ -1,6 +1,6 @@
 import React from "react";
 import { useUserContext } from "./Context/usercontext";
-
+import "../Components/Home.css";
 
 function Home() {
   const { name, setName, email, setEmail, phone, setPhone, handleFormSubmit } =
@@ -16,6 +16,7 @@ function Home() {
           <img
             
             // src="https://cdn-icons-gif.flaticon.com/12756/12756598.gif"
+            src="https://cdn-icons-gif.flaticon.com/8121/8121277.gif"
             className="img-fluid"
             alt="Contact Us Illustration"
           />
